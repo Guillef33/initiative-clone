@@ -87,15 +87,14 @@ nav ul li img {
 .line {
     display: flex;
     justify-content: center;
-    z-index: 0;
+    height: 300px;
 
 }
 
 .line img {
     width: 10px;
     margin-top: -250px !important;
-    z-index: 0;
-    position: relative;
+    position: absolute;
 }
 
 .culture-section {
@@ -128,14 +127,39 @@ nav ul li img {
     width: 166px;
 }
 
-.magic-section {
-    background-image: url(images/circle_waves.png);
+#magic-section {
+    /* background-image: url(images/circle_waves.png);
     background-repeat: no-repeat;
     background-position-x: center;
-    background-size: contain;
+    background-size: contain; */
     height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#magic-section img:hover {
+    transform: rotateX(180deg);
+}
+
+@-webkit-keyframes rotating {
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
+    50%{
+        -webkit-transform: rotate(360deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 2s linear;
+}
+
+.text-circle {
+    position: absolute;
+    text-align: center;
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Initiative Clone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 
@@ -54,10 +55,19 @@
 
             </div>
     </div>
-    <div class="magic-section">
-        <h3>We</h3>
-        <img src="images/German_MakeMagicHappen-e1527023367280.png" alt="">
+    <div id="magic-section">
+        <img src="images/circle_waves.png" alt=""  class="rotating">
+        <div class="text-circle">
+            <h3 class="wow animate__rotateIn">We</h3>
+            <img src="images/German_MakeMagicHappen-e1527023367280.png" alt="">
+        </div>
      </div>
+
+
+     <script src="js/wow.min.js"></script>
+     <script>
+     new WOW().init();
+     </script>
     
 </body>
 </html>
