@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #5ec7eb;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+    background-color:rgba(27, 35, 38, 0.2);
+    padding: 15px;
+}
+
+nav ul li img {
+    display: inline;
+    text-align: center;
+    width: 101px;
+    margin-left: 7px;
+}
+
+.intro {
+   background: #5ec7eb;
+}
+
+.elephant-section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.logo {
+    margin: 0 auto;
+    max-width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo h3 {
+    font-size: 12px;
+    letter-spacing: 4.4px;
+    margin-bottom: -1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.logo img {
+    position: relative;
+    width: 202px;
+    z-index: 10;
+}
+
+
+.logo::before {
+    background: rgba(0, 0, 0, 0) url(images/line_cir.png) repeat scroll 0 0;
+    content: "";
+    display: inline-block;
+    height: 15px;
+    margin-left: -300px;
+    position: absolute;
+    top: 33px;
+    width: 70px;
+}
+
+
+.logo::after {
+    background: rgba(0, 0, 0, 0) url(images/line_cir.png) repeat scroll 0 0;
+    content: "";
+    display: inline-block;
+    height: 15px;
+    margin-left: 300px;
+    position: absolute;
+    top: 33px;
+    width: 70px;
+    transform: rotate(180deg);
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+
+}
+
+.line img {
+    width: 10px;
+    margin-top: -250px !important;
+    z-index: 0;
+    position: relative;
+}
+
+.culture-section {
+    text-align: center;
+    margin: auto;
+}
+
+.culture-section .text-culture {
+    max-width: 600px;
+    line-height: 23px;
+    margin: 50px auto;
+}
+
+.culture-section .text-culture p { 
+    color: #1b2326;
+    font-family: "aldine721_btroman";
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.culture-section .text-culture img {
+    margin-top: 30px;
+}
+
+
+.line {
+    background: #fff none repeat scroll 0 0;
+    height: 1px;
+    margin: 0 auto 32px;
+    width: 166px;
+}
+
+.magic-section {
+    background-image: url(images/circle_waves.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
